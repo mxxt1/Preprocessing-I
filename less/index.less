@@ -102,17 +102,19 @@ header{
 	display:flex;
 	width:100%;
 	// justify-content: center;
-	height:5vh;
+	margin: 1em 0 1em 0;
 
 	nav{
 		display:flex;
 		width:100%;
 		justify-content:space-around;
+		align-items:center;
 	
 		a{
 			justify-content:center;
 			text-decoration:none;
 			font-family:@headlineText;
+			color:gray;
 		}//close nav links
 	  }//close nav container
 	}//close header
@@ -121,8 +123,9 @@ header{
 .hero-container{
 	.displayWidth();
 	// flex-direction:column;
-	height:50vh;
-	background-color:lightgray;
+	// height:50vh;
+	background-color:white;
+	margin: 0 0 .5em 0;
 
 	.profile_pic{
 		width:33%;
@@ -146,9 +149,14 @@ header{
 		align-items:center;
 		h1{
 			font-size:3em;
+			margin:0 0 .5em 0;
 		}
 		h3{
 			font-size:1.5em;
+			margin: 0 0 .5em 0;
+		}
+		a{
+			text-decoration:none;
 		}
 	}//close .headline
 }//close hero-container
@@ -160,16 +168,16 @@ header{
 	// flex-direction:column;
 	flex-wrap:wrap;
 	// justify-content:space-around;
-	justify-content: space-evenly;
+	justify-content: center;
 
 	.div1{
 		display:flex;
-		// flex-direction:column;
-		width:40%;
+		flex-direction:column;
+		width:25%;
 		justify-content: center;
 		align-items:center;
 		border: 1px solid black;
-		margin: 1.5em .25em 1.5em .25em;
+		margin: .5em .0 .5em 0;
 	
 		h2{
 			font-size:1em;
@@ -188,22 +196,24 @@ header{
 			justify-content:center;
 
 			img{
-				width:50%;
+				width:60%;
 			}
 			
 		 }//close img
 
-		 .eduCopy{
 
-
-
-			
+		 @media screen and (max-width:800px){
 
 		 }
 
-	}//close div
+		 @media screen and (max-width:400px){
+			 
+		 }
+	
 
-}//close education container
+
+	}//close education container
+		 
 
 
 .work-experience{
@@ -218,6 +228,7 @@ header{
 		text-align:left;
 		border: 1px solid black;
 	}
+
 
 
 }
