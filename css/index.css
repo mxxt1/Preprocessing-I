@@ -132,8 +132,25 @@ table {
 }
 html,
 body {
+  box-sizing: border-box;
   height: 100%;
 }
-
-/* END OF NORMALIZED CSS************************************************/
-
+/***********************************END OF NORMALIZED******************************************/
+html {
+  display: flex;
+  margin: 0, auto;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+/* header and hero banner */
+header {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+header nav {
+  justify-content: space-evenly;
+  width: 100%;
+}
