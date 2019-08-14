@@ -54,6 +54,170 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	width:100%;
+	// background-color:red; //worked
 }
 
+
+
+
+
+
+/* end of normalized css */
+
+/************************************Variables and Mix-ins**************************************************/
+@bodyText: 'Nunito', sans-serif;
+@headlineText: 'Lexend Peta', sans-serif;
+
+.displayWidth(){
+	display:flex;
+	width:100%;
+	// justify-content: space-between;
+}
+
+
+*{
+	box-sizing:border-box;
+	padding:0;
+	font-size:62.5%;
+}
+
+body{
+	max-width:80%;
+	margin:auto;
+}
+
+h1, h2, h3{
+	font-family:@headlineText;
+
+}
+
+p{
+	font-family:@bodyText;
+
+}
+
+header{
+	display:flex;
+	width:100%;
+	// justify-content: center;
+	height:5vh;
+
+	nav{
+		display:flex;
+		width:100%;
+		justify-content:space-around;
+	
+		a{
+			justify-content:center;
+			text-decoration:none;
+			font-family:@headlineText;
+		}//close nav links
+	  }//close nav container
+	}//close header
+
+
+.hero-container{
+	.displayWidth();
+	// flex-direction:column;
+	height:50vh;
+	background-color:lightgray;
+
+	.profile_pic{
+		width:33%;
+		justify-content: center;
+		align-items:center;
+		margin-left:10%;
+		
+		img{
+			width:100%;
+			padding-top:10%;
+			padding-bottom:10%;
+			padding-left:10%;
+	
+			}//close profilepic img
+		}//close .profilepic
+	.headline{
+		display:flex;
+		flex-direction:column;
+		width:70%;
+		justify-content: center;
+		align-items:center;
+		h1{
+			font-size:3em;
+		}
+		h3{
+			font-size:1.5em;
+		}
+	}//close .headline
+}//close hero-container
+
+
+
+.education{
+	.displayWidth();
+	// flex-direction:column;
+	flex-wrap:wrap;
+	// justify-content:space-around;
+	justify-content: space-evenly;
+
+	.div1{
+		display:flex;
+		// flex-direction:column;
+		width:40%;
+		justify-content: center;
+		align-items:center;
+		border: 1px solid black;
+		margin: 1.5em .25em 1.5em .25em;
+	
+		h2{
+			font-size:1em;
+			text-align:center;
+			margin-bottom:.5em;
+			margin-top:1em;
+		}
+		p{
+			font-size:.5em;
+			text-align:center;
+			margin-bottom:.25em;
+		}
+		.imgCon{
+			display:flex;
+			width:50%;
+			justify-content:center;
+
+			img{
+				width:50%;
+			}
+			
+		 }//close img
+
+		 .eduCopy{
+
+
+
+			
+
+		 }
+
+	}//close div
+
+}//close education container
+
+
+.work-experience{
+	.displayWidth();
+
+
+	table{
+		width: 100%;;
+		border:2px solid black;
+	}
+	thead, th, tr,td{
+		text-align:left;
+		border: 1px solid black;
+	}
+
+
+}
