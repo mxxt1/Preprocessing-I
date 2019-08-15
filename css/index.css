@@ -157,7 +157,7 @@ p {
 header {
   display: flex;
   width: 100%;
-  margin: 1em 0 1em 0;
+  margin: 1rem 0 1rem 0;
 }
 header nav {
   display: flex;
@@ -165,19 +165,44 @@ header nav {
   justify-content: space-around;
   align-items: center;
 }
+@media screen and (max-width: 400px) {
+  header nav {
+    flex-direction: column;
+  }
+}
 header nav a {
   justify-content: center;
   text-decoration: none;
   font-family: 'Lexend Peta', sans-serif;
   color: gray;
 }
+@media screen and (max-width: 400px) {
+  header nav a {
+    width: 100%;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.3em;
+  }
+}
 .hero-container {
   display: flex;
   width: 100%;
   background-color: white;
-  margin: 0 0 0.5em 0;
+  margin: 0 0 0.5rem 0;
   border: 1px solid black;
   border-radius: 10px;
+}
+@media screen and (max-width: 900px) {
+  .hero-container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 400px) {
+  .hero-container {
+    flex-direction: column;
+  }
 }
 .hero-container .headline {
   display: flex;
@@ -185,7 +210,23 @@ header nav a {
   width: 50%;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 900px) {
+  .hero-container .headline {
+    width: 100%;
+  }
+  .hero-container .headline img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .hero-container .headline {
+    width: 100%;
+  }
+  .hero-container .headline img {
+    width: 50%;
+  }
 }
 .hero-container .headline .profile_pic {
   width: 50%;
@@ -200,12 +241,12 @@ header nav a {
   border-radius: 10px;
 }
 .hero-container .headline h1 {
-  font-size: 3em;
-  margin: 0 0 0.5em 0;
+  font-size: 3rem;
+  margin: 0 0 0.5rem 0;
 }
 .hero-container .headline h3 {
   font-size: 1.5em;
-  margin: 0 0 0.5em 0;
+  margin: 0 0 0.5rem 0;
 }
 .hero-container .contactForm {
   display: flex;
@@ -214,17 +255,70 @@ header nav a {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 900px) {
+  .hero-container .contactForm {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .hero-container .contactForm {
+    width: 100%;
+  }
+}
 .hero-container .contactForm form {
   font-family: 'Nunito', sans-serif;
-  width: 100%;
-  height: 100%;
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin: 1rem 0 1em 0;
   border: 1px solid black;
 }
+@media screen and (max-width: 900px) {
+  .hero-container .contactForm form {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .hero-container .contactForm form {
+    width: 90%;
+  }
+}
+.hero-container .contactForm form input {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.hero-container .contactForm form textarea {
+  margin-bottom: 1em;
+}
+.hero-container .contactForm form p {
+  text-align: center;
+}
 .hero-container .contactForm .buttonCta {
+  font-size: 0.5em;
   text-decoration: none;
   font-family: 'Lexend Peta', sans-serif;
   border: 1px solid black;
-  padding: 0.75em 1em 0.75em 1em;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin-top: 2rem;
+}
+.about {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin: 1rem 0 1rem 0;
+}
+.about h2 {
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+.about p {
+  padding: 0.5rem;
+}
+.educationTitle {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  font-size: 2rem;
+  margin: 0.5rem;
 }
 .education {
   display: flex;
