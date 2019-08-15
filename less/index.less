@@ -77,6 +77,8 @@ html, body {
 }
 
 
+/**** general styling *******/
+
 *{
 	box-sizing:border-box;
 	padding:0;
@@ -439,8 +441,13 @@ header{
 
 .work-experience{
 	.displayWidth();
+	flex-direction:column;
 	margin:0 0 3em 0;
-
+	h2{
+		justify-content:flex-start;
+	font-size:2rem;
+	margin:.5rem;
+	}
 
 	table{
 		width: 100%;;

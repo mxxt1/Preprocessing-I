@@ -137,6 +137,7 @@ body {
 }
 /* end of normalized css */
 /************************************Variables and Mix-ins**************************************************/
+/**** general styling *******/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -432,7 +433,13 @@ header nav a {
 .work-experience {
   display: flex;
   width: 100%;
+  flex-direction: column;
   margin: 0 0 3em 0;
+}
+.work-experience h2 {
+  justify-content: flex-start;
+  font-size: 2rem;
+  margin: 0.5rem;
 }
 .work-experience table {
   width: 100%;
