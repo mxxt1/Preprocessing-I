@@ -113,7 +113,7 @@ header{
 
 		}//close 900px
 
-		@media screen and (max-width:400px){
+		@media screen and (max-width:500px){
 			flex-direction:column;
 		}//close 400px
 	
@@ -123,7 +123,7 @@ header{
 			font-family:@headlineText;
 			color:gray;
 
-			@media screen and (max-width:400px){
+			@media screen and (max-width:500px){
 				width:100%;
 				border:1px solid black;
 				align-items:center;
@@ -137,7 +137,7 @@ header{
 
 		}//close 800px
 
-		@media screen and (max-width:400px){
+		@media screen and (max-width:500px){
 		
 		}//close 400px
 	}//close header
@@ -304,7 +304,7 @@ header{
 
 		}//close 800px
 	
-		@media screen and (max-width:400px){
+		@media screen and (max-width:500px){
 			width:100%;
 
 		}
@@ -314,17 +314,19 @@ header{
 		flex-direction:column;
 		width:30%;
 		margin:1rem 0 1rem 0;
-		justify-content: center;
-		align-items:center;
+		padding-right:.5rem;
+		// justify-content: center;
+		// align-items:center;
 
 		h2{
 			font-family:@headlineText;
 			font-size:2rem;
 			margin:1rem 0 1rem 0;
+			padding:.75rem 1rem 0 1rem;
 		}
 
 		ul{
-			width:50%;
+			width:100%;
 			font-family:@headlineText;
 			list-style-type: square;
 
@@ -340,20 +342,30 @@ header{
 
 
 		@media screen and (max-width:900px){
-
+			padding-right:1.5em;
+			
+			li{
+				font-size:1rem;
+			}
 		}//close 800px
 	
-		@media screen and (max-width:400px){
+		@media screen and (max-width:500px){
 			flex-direction:column;
 			width:100%;
-
+			ul{
+				padding-left:33%;;
+			
+				li{
+					font-size:.75rem;
+				}
+		  }//close ul
 		}
 	}//close skills
 	@media screen and (max-width:900px){
 
 	}//close 800px
 
-	@media screen and (max-width:400px){
+	@media screen and (max-width:500px){
 		flex-direction:column;
 	}//close 400px
 }//close about
@@ -383,7 +395,7 @@ header{
 		border-radius: 10px;
 	
 		h2{
-			font-size:1.5em;
+			font-size:1.25em;
 			text-align:center;
 			margin-bottom:.5em;
 			margin-top:1em;
@@ -403,11 +415,14 @@ header{
 			}
 			
 		 }//close img
-		 @media screen and (max-width:800px){
+		 @media screen and (max-width:900px){
 			width:50%;
+			h2{
+			font-size:1em;
+		}
 		 }//close 800px
 
-		 @media screen and (max-width:400px){
+		 @media screen and (max-width:500px){
 			width:100%;
 		 }//close 400px
 		}//close div1
@@ -415,7 +430,7 @@ header{
 
 	}//close 800px
 
-	@media screen and (max-width:400px){
+	@media screen and (max-width:500px){
 		
 	}//close 400px
 }//close education container

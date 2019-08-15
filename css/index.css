@@ -165,7 +165,7 @@ header nav {
   justify-content: space-around;
   align-items: center;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   header nav {
     flex-direction: column;
   }
@@ -176,7 +176,7 @@ header nav a {
   font-family: 'Lexend Peta', sans-serif;
   color: gray;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   header nav a {
     width: 100%;
     border: 1px solid black;
@@ -323,7 +323,7 @@ header nav a {
 .about .aboutCopy p {
   padding: 1rem 0.5rem 0.5rem 0.5rem;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .about .aboutCopy {
     width: 100%;
   }
@@ -333,29 +333,43 @@ header nav a {
   flex-direction: column;
   width: 30%;
   margin: 1rem 0 1rem 0;
-  justify-content: center;
-  align-items: center;
+  padding-right: 0.5rem;
 }
 .about .skills h2 {
   font-family: 'Lexend Peta', sans-serif;
   font-size: 2rem;
   margin: 1rem 0 1rem 0;
+  padding: 0.75rem 1rem 0 1rem;
 }
 .about .skills ul {
-  width: 50%;
+  width: 100%;
   font-family: 'Lexend Peta', sans-serif;
   list-style-type: square;
 }
 .about .skills ul li {
   margin: 1rem 0 1rem 0;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 900px) {
+  .about .skills {
+    padding-right: 1.5em;
+  }
+  .about .skills li {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
   .about .skills {
     flex-direction: column;
     width: 100%;
   }
+  .about .skills ul {
+    padding-left: 33%;
+  }
+  .about .skills ul li {
+    font-size: 0.75rem;
+  }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .about {
     flex-direction: column;
   }
@@ -384,7 +398,7 @@ header nav a {
   border-radius: 10px;
 }
 .education .div1 h2 {
-  font-size: 1.5em;
+  font-size: 1.25em;
   text-align: center;
   margin-bottom: 0.5em;
   margin-top: 1em;
@@ -402,12 +416,15 @@ header nav a {
 .education .div1 .imgCon img {
   width: 80%;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .education .div1 {
     width: 50%;
   }
+  .education .div1 h2 {
+    font-size: 1em;
+  }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .education .div1 {
     width: 100%;
   }
