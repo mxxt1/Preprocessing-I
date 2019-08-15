@@ -156,7 +156,7 @@ header{
 			font-size:1.5em;
 			margin: 0 0 .5em 0;
 		}
-		a{
+		.buttonCta{
 			text-decoration:none;
 		}
 	}//close .headline
@@ -174,20 +174,20 @@ header{
 	.div1{
 		display:flex;
 		flex-direction:column;
-		width:25%;
+		width:20%;
 		justify-content: center;
 		align-items:center;
 		border: 1px solid black;
-		margin: .5em .0 .5em 0;
+		margin: .5em .0 1em 0;
 	
 		h2{
-			font-size:1em;
+			font-size:1.5em;
 			text-align:center;
 			margin-bottom:.5em;
 			margin-top:1em;
 		}
 		p{
-			font-size:.5em;
+			font-size:1em;
 			text-align:center;
 			margin-bottom:.25em;
 		}
@@ -197,7 +197,7 @@ header{
 			justify-content:center;
 
 			img{
-				width:60%;
+				width:80%;
 			}
 			
 		 }//close img
@@ -205,31 +205,45 @@ header{
 
 		 @media screen and (max-width:800px){
 
-		 }
+		 }//close 800px
 
 		 @media screen and (max-width:400px){
 			 
-		 }
+		 }//close 400px
 	
+		}//close div1
 
-
-	}//close education container
+}//close education container
 		 
 
 
 .work-experience{
 	.displayWidth();
+	margin:0 0 3em 0;
 
 
 	table{
 		width: 100%;;
 		border:2px solid black;
-	}
-	thead, th, tr,td{
-		text-align:left;
-		border: 1px solid black;
-	}
+	
+		thead, th, tr,td{
+			text-align:left;
+			border: 1px solid black;
+			padding:2%;
+		}
 
+		thead{
+			font-weight:bold;
+			font-family:@headlineText;
+		}
 
+		td{
+			font-family:@bodyText;
+		}
+	}//close table
+}//close work-experience
 
+footer{
+	text-align:center;
+	font-family:@headlineText;
 }

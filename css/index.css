@@ -176,6 +176,7 @@ header nav a {
   width: 100%;
   background-color: white;
   margin: 0 0 0.5em 0;
+  border: 1px solid black;
 }
 .hero-container .profile_pic {
   width: 33%;
@@ -204,6 +205,9 @@ header nav a {
   font-size: 1.5em;
   margin: 0 0 0.5em 0;
 }
+.hero-container .headline .buttonCta {
+  text-decoration: none;
+}
 .education {
   display: flex;
   width: 100%;
@@ -213,20 +217,20 @@ header nav a {
 .education .div1 {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 20%;
   justify-content: center;
   align-items: center;
   border: 1px solid black;
-  margin: 0.5em 0 0.5em 0;
+  margin: 0.5em 0 1em 0;
 }
 .education .div1 h2 {
-  font-size: 1em;
+  font-size: 1.5em;
   text-align: center;
   margin-bottom: 0.5em;
   margin-top: 1em;
 }
 .education .div1 p {
-  font-size: 0.5em;
+  font-size: 1em;
   text-align: center;
   margin-bottom: 0.25em;
 }
@@ -236,20 +240,33 @@ header nav a {
   justify-content: center;
 }
 .education .div1 .imgCon img {
-  width: 60%;
+  width: 80%;
 }
 .work-experience {
   display: flex;
   width: 100%;
+  margin: 0 0 3em 0;
 }
 .work-experience table {
   width: 100%;
   border: 2px solid black;
 }
-.work-experience thead,
-.work-experience th,
-.work-experience tr,
-.work-experience td {
+.work-experience table thead,
+.work-experience table th,
+.work-experience table tr,
+.work-experience table td {
   text-align: left;
   border: 1px solid black;
+  padding: 2%;
+}
+.work-experience table thead {
+  font-weight: bold;
+  font-family: 'Lexend Peta', sans-serif;
+}
+.work-experience table td {
+  font-family: 'Nunito', sans-serif;
+}
+footer {
+  text-align: center;
+  font-family: 'Lexend Peta', sans-serif;
 }
