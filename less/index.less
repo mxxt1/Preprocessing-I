@@ -103,12 +103,26 @@ header{
 	width:100%;
 	// justify-content: center;
 	margin: 1em 0 1em 0;
+	@media screen and (max-width:800px){
+
+	}//close 800px
+
+	@media screen and (max-width:400px){
+		
+	}//close 400px
 
 	nav{
 		display:flex;
 		width:100%;
 		justify-content:space-around;
 		align-items:center;
+		@media screen and (max-width:800px){
+
+		}//close 800px
+
+		@media screen and (max-width:400px){
+			
+		}//close 400px
 	
 		a{
 			justify-content:center;
@@ -127,27 +141,57 @@ header{
 	background-color:white;
 	margin: 0 0 .5em 0;
 	border:1px solid black;
+	border-radius: 10px;
+	@media screen and (max-width:800px){
 
-	.profile_pic{
-		width:33%;
-		justify-content: center;
-		align-items:center;
-		margin-left:10%;
+	}//close 800px
+
+	@media screen and (max-width:400px){
 		
-		img{
-			width:100%;
-			padding-top:10%;
-			padding-bottom:10%;
-			padding-left:10%;
+	}//close 400px
+
 	
-			}//close profilepic img
-		}//close .profilepic
 	.headline{
 		display:flex;
 		flex-direction:column;
-		width:70%;
+		width:50%;
 		justify-content: center;
 		align-items:center;
+		margin-bottom:2em;
+		@media screen and (max-width:800px){
+
+		}//close 800px
+
+		@media screen and (max-width:400px){
+			
+		}//close 400px
+		.profile_pic{
+			width:50%;
+			justify-content: center;
+			align-items:center;
+			// margin-left:10%;
+			padding-top:10%;
+			padding-bottom:5%;
+			// padding-left:10%;
+			
+			@media screen and (max-width:800px){
+	
+			}//close 800px
+	
+			@media screen and (max-width:400px){
+				
+			}//close 400px
+			
+			img{
+				width:100%;
+				// padding-top:10%;
+				// padding-bottom:10%;
+				// padding-left:10%;
+				border:1px solid black;
+				border-radius: 10px;
+		
+				}//close profilepic img
+			}//close .profilepic
 		h1{
 			font-size:3em;
 			margin:0 0 .5em 0;
@@ -156,10 +200,30 @@ header{
 			font-size:1.5em;
 			margin: 0 0 .5em 0;
 		}
+	}//close .headline
+		
+		
+	.contactForm{
+		display:flex;
+		flex-direction:column;
+		width:50%;
+		align-items:center;
+		justify-content: center;
+		
+		form{
+			// .displayWidth();
+			font-family:@bodyText;
+			width: 100%;
+			height:100%;
+			border:1px solid black;
+		}
 		.buttonCta{
 			text-decoration:none;
+			font-family:@headlineText;
+			border:1px solid black;
+			padding:.75em 1em .75em 1em;
 		}
-	}//close .headline
+	  }//close contact form
 }//close hero-container
 
 

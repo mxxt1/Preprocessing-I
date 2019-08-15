@@ -177,25 +177,27 @@ header nav a {
   background-color: white;
   margin: 0 0 0.5em 0;
   border: 1px solid black;
-}
-.hero-container .profile_pic {
-  width: 33%;
-  justify-content: center;
-  align-items: center;
-  margin-left: 10%;
-}
-.hero-container .profile_pic img {
-  width: 100%;
-  padding-top: 10%;
-  padding-bottom: 10%;
-  padding-left: 10%;
+  border-radius: 10px;
 }
 .hero-container .headline {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 50%;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2em;
+}
+.hero-container .headline .profile_pic {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+.hero-container .headline .profile_pic img {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 .hero-container .headline h1 {
   font-size: 3em;
@@ -205,8 +207,24 @@ header nav a {
   font-size: 1.5em;
   margin: 0 0 0.5em 0;
 }
-.hero-container .headline .buttonCta {
+.hero-container .contactForm {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.hero-container .contactForm form {
+  font-family: 'Nunito', sans-serif;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+.hero-container .contactForm .buttonCta {
   text-decoration: none;
+  font-family: 'Lexend Peta', sans-serif;
+  border: 1px solid black;
+  padding: 0.75em 1em 0.75em 1em;
 }
 .education {
   display: flex;
