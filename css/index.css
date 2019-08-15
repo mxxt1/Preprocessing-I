@@ -258,6 +258,7 @@ header nav a {
 .hero-container .contactForm form {
   font-family: 'Nunito', sans-serif;
   font-size: 1.5rem;
+  width: 80%;
   padding: 1rem;
   margin: 1rem 0 1em 0;
   border: 1px solid black;
@@ -278,6 +279,7 @@ header nav a {
 }
 .hero-container .contactForm form textarea {
   margin-bottom: 1em;
+  width: 100%;
 }
 .hero-container .contactForm form p {
   text-align: center;
@@ -310,15 +312,16 @@ header nav a {
 .about .aboutCopy {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 70%;
   margin: 1rem 0 1rem 0;
+  padding: 0.75rem 1rem 0 1rem;
 }
 .about .aboutCopy h2 {
   font-size: 2rem;
-  margin: 0.5rem;
+  margin: 0.5rem 0.5rem 1rem 0.5rem;
 }
 .about .aboutCopy p {
-  padding: 0.5rem;
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
 }
 @media screen and (max-width: 400px) {
   .about .aboutCopy {
@@ -328,7 +331,7 @@ header nav a {
 .about .skills {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 30%;
   margin: 1rem 0 1rem 0;
   justify-content: center;
   align-items: center;
